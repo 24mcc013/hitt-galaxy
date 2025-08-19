@@ -38,18 +38,19 @@ const Contact = () => {
   const contactInfo = [
     {
       label: "Email",
-      value: "chitt@example.com",
+      value: "chittbhavsar1511@gmail.com",
       icon: Mail,
-      href: "mailto:chitt@example.com",
+      href: "mailto:chittbhavsar1511@gmail.com",
     },
     {
       label: "Phone",
-      value: "+1 (555) 123-4567",
+      value: "+91 - 7016705055",
       icon: Phone,
+      href: "tel:+917016705055",
     },
     {
       label: "Location",
-      value: "123 Galactic Ave, Universe City",
+      value: "Ahmedabad, Gujarat, India",
       icon: MapPin,
     },
   ];
@@ -57,18 +58,13 @@ const Contact = () => {
   const socialLinks = [
     {
       icon: Github,
-      href: "https://github.com/chittbhavsar",
+      href: "https://github.com/Chitt-Bhavsar/",
       label: "GitHub",
     },
     {
       icon: Linkedin,
-      href: "https://linkedin.com/in/chittbhavsar",
+      href: "https://in.linkedin.com/in/chitt-bhavsar",
       label: "LinkedIn",
-    },
-    {
-      icon: Twitter,
-      href: "https://twitter.com/chittbhavsar",
-      label: "Twitter",
     },
   ];
 
