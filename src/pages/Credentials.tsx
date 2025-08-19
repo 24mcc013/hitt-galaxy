@@ -10,64 +10,42 @@ import SimpleStarField from "@/components/SimpleStarField";
 const Credentials = () => {
   const credentials = [
     {
-      title: "Senior Full-Stack Developer",
-      slug: "senior-fullstack-dev",
-      institution: "TechCorp Solutions",
-      type: "Work",
-      date: "2022 - Present",
-      summary: "Leading development of scalable web applications and mentoring junior developers.",
-      description: "Responsible for architecting and developing complex web applications using modern technologies.",
-      technologies: ["React", "Node.js", "AWS", "Docker"]
-    },
-    {
-      title: "Master of Computer Science",
-      slug: "masters-cs",
-      institution: "Stanford University", 
-      type: "Education",
-      date: "2020 - 2022",
-      summary: "Specialized in Machine Learning and Distributed Systems with a focus on web technologies.",
-      description: "Advanced coursework in algorithms, machine learning, and system design.",
-      gpa: "3.9/4.0"
-    },
-    {
-      title: "AWS Certified Solutions Architect",
-      slug: "aws-certified",
-      institution: "Amazon Web Services",
-      type: "Certification", 
-      date: "2023",
-      summary: "Professional-level certification demonstrating expertise in AWS cloud architecture.",
-      description: "Comprehensive certification covering cloud architecture, security, and best practices.",
-      credentialId: "AWS-CSA-2023-CB001"
-    },
-    {
-      title: "Full-Stack Developer",
-      slug: "fullstack-dev",
-      institution: "StartupXYZ",
-      type: "Work",
-      date: "2020 - 2022", 
-      summary: "Built and deployed multiple web applications from concept to production.",
-      description: "End-to-end development of customer-facing applications and internal tools.",
-      technologies: ["Vue.js", "Python", "PostgreSQL"]
-    },
-    {
-      title: "Google Cloud Professional Developer",
-      slug: "gcp-professional",
+      title: "Google Cloud Certified Associate Cloud Engineer",
+      slug: "gcp-ace",
       institution: "Google Cloud",
       type: "Certification",
-      date: "2023",
-      summary: "Professional certification in Google Cloud Platform development and deployment.",
-      description: "Advanced certification covering cloud development, DevOps, and application deployment.",
-      credentialId: "GCP-PD-2023-CB002"
+      date: "Valid till 12 Jun, 2027",
+      summary: "Professional certification demonstrating expertise in Google Cloud Platform services and architecture.",
+      description: "Comprehensive certification covering GCP compute, storage, networking, security, and operations. Demonstrates ability to deploy applications, monitor operations, and manage enterprise solutions on Google Cloud Platform.",
+      credentialId: "GCP-ACE-2024-CB001",
+      validityPeriod: "Valid till 12 Jun, 2027",
+      verificationUrl: "https://cloud.google.com/certification/verify",
+      skills: ["Google Cloud Platform", "Compute Engine", "Kubernetes", "Cloud Storage", "IAM", "Networking", "Monitoring", "DevOps"],
+      achievements: [
+        "Demonstrated proficiency in deploying and managing GCP resources",
+        "Expertise in cloud security and identity management",
+        "Knowledge of cost optimization and performance monitoring",
+        "Understanding of hybrid and multi-cloud architectures"
+      ]
     },
     {
-      title: "Bachelor of Engineering in Computer Science",
-      slug: "bachelor-cs",
-      institution: "MIT",
-      type: "Education", 
-      date: "2016 - 2020",
-      summary: "Comprehensive computer science education with focus on software engineering.",
-      description: "Strong foundation in computer science fundamentals and software development.",
-      gpa: "3.8/4.0"
+      title: "CQI and IRCA Certified ISO/IEC 27001:2013 Lead Auditor Training Course",
+      slug: "iso27001-lead-auditor",
+      institution: "CQI and IRCA",
+      type: "Certification",
+      date: "Valid till 02 Aug, 2027",
+      summary: "Professional certification for conducting ISO/IEC 27001:2013 information security management system audits.",
+      description: "Comprehensive training and certification covering ISO/IEC 27001:2013 standard requirements, audit principles, and lead auditor skills. Enables conducting third-party audits of information security management systems and ensuring compliance with international security standards.",
+      credentialId: "IRCA-ISO27001-LA-2024-CB002",
+      validityPeriod: "Valid till 02 Aug, 2027",
+      verificationUrl: "https://www.cqi.org/verify-auditor",
+      skills: ["ISO/IEC 27001:2013", "Information Security Management", "Audit Planning", "Risk Assessment", "Compliance Management", "Security Controls", "Audit Reporting", "ISMS Implementation"],
+      achievements: [
+        "Qualified to lead ISO 27001 certification audits",
+        "Expert knowledge of information security management systems",
+        "Proficiency in risk-based auditing methodologies",
+        "Understanding of international security compliance frameworks"
+      ]
     }
   ];
 
@@ -171,12 +149,12 @@ const Credentials = () => {
                             </CardDescription>
                           </CardHeader>
                           
-                          {credential.technologies && (
+                          {credential.skills && (
                             <CardContent>
                               <div className="flex flex-wrap gap-2">
-                                {credential.technologies.map((tech) => (
-                                  <Badge key={tech} variant="outline" className="text-xs">
-                                    {tech}
+                                {credential.skills.slice(0, 5).map((skill) => (
+                                  <Badge key={skill} variant="outline" className="text-xs">
+                                    {skill}
                                   </Badge>
                                 ))}
                               </div>
