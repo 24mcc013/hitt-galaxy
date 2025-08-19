@@ -152,7 +152,7 @@ const Index = () => {
                 initial={{ opacity: 0, x: 50, scale: 0.8 }}
                 animate={{ opacity: 1, x: 0, scale: 1 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
-                className="flex justify-center order-1 lg:order-2"
+                className="flex justify-center order-1 lg:order-2 mt-8 lg:mt-16"
               >
                 <div className="relative">
                   <div className="absolute inset-0 bg-gradient-nebula rounded-full blur-3xl opacity-30 animate-pulse" />
