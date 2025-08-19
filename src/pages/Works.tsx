@@ -1,9 +1,9 @@
+
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Github, Calendar } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import StarField from "@/components/StarField";
 
@@ -53,6 +53,7 @@ const Works = () => {
 
   return (
     <div className="min-h-screen relative">
+      <StarField />
       <Navigation />
       
       <main className="container mx-auto px-4 pt-24 pb-16">

@@ -51,6 +51,7 @@ const Index = () => {
 
   return (
     <div className="relative">
+      <StarField />
       <Navigation />
       
       {/* Act I: Hero Section */}
@@ -188,12 +189,9 @@ const Index = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, ease: "easeOut" }}
-            className="fixed inset-0 z-20 bg-background/80 flex items-center justify-center"
+            className="fixed inset-0 z-20"
           >
-            <div className="text-center">
-              <h2 className="text-2xl text-primary mb-4">Galaxy Loading...</h2>
-              <p className="text-muted-foreground">3D components temporarily disabled</p>
-            </div>
+            <InteractiveGalaxy />
           </motion.section>
         )}
       </AnimatePresence>

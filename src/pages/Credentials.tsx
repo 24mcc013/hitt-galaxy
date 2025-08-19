@@ -1,3 +1,4 @@
+
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -97,6 +98,7 @@ const Credentials = () => {
 
   return (
     <div className="min-h-screen relative">
+      <StarField />
       <Navigation />
       
       <main className="container mx-auto px-4 pt-24 pb-16">
