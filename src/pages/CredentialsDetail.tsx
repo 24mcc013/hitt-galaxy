@@ -66,7 +66,6 @@ const CredentialsDetail = () => {
 
   return (
     <div className="min-h-screen relative">
-      <StarField />
       <Navigation />
       
       <main className="container mx-auto px-4 pt-24 pb-16">
