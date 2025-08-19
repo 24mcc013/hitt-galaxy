@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { FileText, Calendar, Users, ExternalLink } from "lucide-react";
 import Navigation from "@/components/Navigation";
-import StarField from "@/components/StarField";
+import SimpleStarField from "@/components/SimpleStarField";
 
 const Research = () => {
   const papers = [
@@ -53,7 +53,7 @@ const Research = () => {
 
   return (
     <div className="min-h-screen relative">
-      <StarField />
+      <SimpleStarField />
       <Navigation />
       
       <main className="container mx-auto px-4 pt-24 pb-16">

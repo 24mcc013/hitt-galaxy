@@ -7,7 +7,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import Navigation from "@/components/Navigation";
-import StarField from "@/components/StarField";
+import SimpleStarField from "@/components/SimpleStarField";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -74,7 +74,7 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen relative">
-      <StarField />
+      <SimpleStarField />
       <Navigation />
       
       <main className="container mx-auto px-4 pt-24 pb-16">

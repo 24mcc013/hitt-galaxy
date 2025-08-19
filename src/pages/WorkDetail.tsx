@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, ExternalLink, Github } from "lucide-react";
 import Navigation from "@/components/Navigation";
-import StarField from "@/components/StarField";
+import SimpleStarField from "@/components/SimpleStarField";
 
 const WorkDetail = () => {
   const { slug } = useParams();
@@ -55,7 +55,7 @@ const WorkDetail = () => {
 
   return (
     <div className="min-h-screen relative">
-      <StarField />
+      <SimpleStarField />
       <Navigation />
       
       <main className="container mx-auto px-4 pt-24 pb-16">

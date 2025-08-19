@@ -5,7 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Calendar, Building, Award, GraduationCap, Briefcase } from "lucide-react";
 import Navigation from "@/components/Navigation";
-import StarField from "@/components/StarField";
+import SimpleStarField from "@/components/SimpleStarField";
 
 const Credentials = () => {
   const credentials = [
@@ -98,7 +98,7 @@ const Credentials = () => {
 
   return (
     <div className="min-h-screen relative">
-      <StarField />
+      <SimpleStarField />
       <Navigation />
       
       <main className="container mx-auto px-4 pt-24 pb-16">
