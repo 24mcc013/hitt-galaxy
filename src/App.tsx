@@ -12,6 +12,8 @@ import Credentials from "./pages/Credentials";
 import CredentialsDetail from "./pages/CredentialsDetail";
 import Positions from "./pages/Positions";
 import PositionDetail from "./pages/PositionDetail";
+import Experience from "./pages/Experience";
+import ExperienceDetail from "./pages/ExperienceDetail";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
@@ -33,6 +35,8 @@ const App = () => (
           <Route path="/credentials/:slug" element={<CredentialsDetail />} />
           <Route path="/positions" element={<Positions />} />
           <Route path="/positions/:slug" element={<PositionDetail />} />
+          <Route path="/experience" element={<Experience />} />
+          <Route path="/experience/:slug" element={<ExperienceDetail />} />
           <Route path="/contact" element={<Contact />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

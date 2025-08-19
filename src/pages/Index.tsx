@@ -239,6 +239,21 @@ const Index = () => {
                 viewport={{ once: true }}
                 className="card-nebula p-6"
               >
+                <h3 className="text-xl font-semibold mb-3 text-accent">Experience</h3>
+                <p className="text-muted-foreground mb-4 text-sm">
+                  Professional work experience and internships
+                </p>
+                <Button asChild variant="outline" size="sm" className="w-full">
+                  <a href="/experience">View Experience</a>
+                </Button>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.6 }}
+                viewport={{ once: true }}
+                className="card-nebula p-6"
+              >
                 <h3 className="text-xl font-semibold mb-3 text-secondary">Contact</h3>
                 <p className="text-muted-foreground mb-4 text-sm">
                   Get in touch for collaborations
