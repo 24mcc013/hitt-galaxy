@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import StarField from "@/components/StarField";
+import SimpleStarField from "@/components/SimpleStarField";
 import InteractiveGalaxy from "@/components/InteractiveGalaxy";
 import heroImage from "@/assets/chitt-headshot.jpg";
 
@@ -51,7 +52,7 @@ const Index = () => {
 
   return (
     <div className="relative">
-      <StarField />
+      <SimpleStarField />
       <Navigation />
       
       {/* Act I: Hero Section */}
@@ -191,7 +192,10 @@ const Index = () => {
             transition={{ duration: 1, ease: "easeOut" }}
             className="fixed inset-0 z-20"
           >
-            <InteractiveGalaxy />
+            {/* <InteractiveGalaxy /> */}
+            <div className="flex items-center justify-center h-full">
+              <p className="text-muted-foreground">3D Galaxy temporarily disabled for debugging</p>
+            </div>
           </motion.section>
         )}
       </AnimatePresence>
