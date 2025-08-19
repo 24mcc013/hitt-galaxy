@@ -57,6 +57,11 @@ const Contact = () => {
 
   const socialLinks = [
     {
+      icon: Mail,
+      href: "mailto:chittbhavsar1511@gmail.com",
+      label: "Email",
+    },
+    {
       icon: Github,
       href: "https://github.com/Chitt-Bhavsar/",
       label: "GitHub",
