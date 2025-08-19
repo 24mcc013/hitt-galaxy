@@ -74,7 +74,7 @@ const Index = () => {
                 initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
-                className="text-left"
+                className="text-center lg:text-left order-2 lg:order-1"
               >
                 <motion.h1 
                   className="hero-title mb-6"
@@ -88,7 +88,7 @@ const Index = () => {
                 </motion.h1>
                 
                 <motion.p 
-                  className="hero-subtitle mb-8 max-w-lg"
+                  className="hero-subtitle mb-8 max-w-lg mx-auto lg:mx-0"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.6 }}
@@ -99,7 +99,7 @@ const Index = () => {
                 </motion.p>
 
                 <motion.div 
-                  className="flex flex-col sm:flex-row gap-4 mb-8"
+                  className="flex flex-col sm:flex-row gap-4 mb-8 justify-center lg:justify-start"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.8 }}
@@ -119,7 +119,7 @@ const Index = () => {
 
                 {/* Social Links */}
                 <motion.div 
-                  className="flex gap-4"
+                  className="flex gap-4 justify-center lg:justify-start"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 1.0 }}
@@ -152,7 +152,7 @@ const Index = () => {
                 initial={{ opacity: 0, x: 50, scale: 0.8 }}
                 animate={{ opacity: 1, x: 0, scale: 1 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
-                className="flex justify-center lg:justify-end"
+                className="flex justify-center order-1 lg:order-2"
               >
                 <div className="relative">
                   <div className="absolute inset-0 bg-gradient-nebula rounded-full blur-3xl opacity-30 animate-pulse" />
