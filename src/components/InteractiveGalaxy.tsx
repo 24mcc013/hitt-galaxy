@@ -1,6 +1,5 @@
 import { useRef, useState, useMemo } from 'react';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
-import { Text, Sphere, Ring } from '@react-three/drei';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import * as THREE from 'three';
@@ -51,13 +50,13 @@ function GalaxyItem({ position, type, title, slug, color }: GalaxyItemProps) {
 
   return (
     <group position={position}>
-      <Sphere
+      <mesh
         ref={meshRef}
-        args={[getSize(), 16, 16]}
         onClick={handleClick}
         onPointerOver={() => setHovered(true)}
         onPointerOut={() => setHovered(false)}
       >
+        <sphereGeometry args={[getSize(), 16, 16]} />
         <meshStandardMaterial
           color={color}
           emissive={color}
@@ -65,25 +64,13 @@ function GalaxyItem({ position, type, title, slug, color }: GalaxyItemProps) {
           transparent
           opacity={0.8}
         />
-      </Sphere>
+      </mesh>
       
       {type === 'project' && (
-        <Ring args={[getSize() + 0.05, getSize() + 0.07, 32]} rotation={[Math.PI / 2, 0, 0]}>
+        <mesh rotation={[Math.PI / 2, 0, 0]}>
+          <ringGeometry args={[getSize() + 0.05, getSize() + 0.07, 32]} />
           <meshBasicMaterial color={color} transparent opacity={0.3} />
-        </Ring>
-      )}
-      
-      {hovered && (
-        <Text
-          position={[0, getSize() + 0.3, 0]}
-          fontSize={0.1}
-          color="white"
-          anchorX="center"
-          anchorY="middle"
-          font="/fonts/Inter-Regular.woff"
-        >
-          {title}
-        </Text>
+        </mesh>
       )}
     </group>
   );
