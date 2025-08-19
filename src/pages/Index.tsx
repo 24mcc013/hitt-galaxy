@@ -12,21 +12,21 @@ const Index = () => {
   const socialLinks = [
     { 
       icon: Github, 
-      href: "https://github.com/chittbhavsar", 
+      href: "https://github.com/Chitt-Bhavsar/", 
       label: "GitHub",
-      username: "@chittbhavsar"
+      username: "@Chitt-Bhavsar"
     },
     { 
       icon: Linkedin, 
-      href: "https://linkedin.com/in/chittbhavsar", 
+      href: "https://in.linkedin.com/in/chitt-bhavsar", 
       label: "LinkedIn",
-      username: "/in/chittbhavsar"
+      username: "/in/chitt-bhavsar"
     },
     { 
       icon: Mail, 
-      href: "mailto:chitt@example.com", 
+      href: "mailto:chittbhavsar1511@gmail.com", 
       label: "Email",
-      username: "chitt@example.com"
+      username: "chittbhavsar1511@gmail.com"
     },
   ];
 
@@ -81,7 +81,8 @@ const Index = () => {
               <Button 
                 className="btn-cosmic text-lg px-8 py-6"
                 onClick={() => {
-                  document.querySelector('footer')?.scrollIntoView({ 
+                  const nextSection = document.querySelector('section:nth-of-type(2)');
+                  nextSection?.scrollIntoView({ 
                     behavior: 'smooth' 
                   });
                 }}
@@ -170,19 +171,19 @@ const Index = () => {
               Explore my portfolio of projects, research papers, and credentials. 
               Each represents a journey through the cosmos of technology and innovation.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 max-w-7xl mx-auto">
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.1 }}
                 viewport={{ once: true }}
-                className="card-nebula p-8"
+                className="card-nebula p-6"
               >
-                <h3 className="text-2xl font-semibold mb-4 text-primary">Projects</h3>
-                <p className="text-muted-foreground mb-6">
+                <h3 className="text-xl font-semibold mb-3 text-primary">Projects</h3>
+                <p className="text-muted-foreground mb-4 text-sm">
                   Full-stack applications and innovative solutions
                 </p>
-                <Button asChild variant="outline">
+                <Button asChild variant="outline" size="sm" className="w-full">
                   <a href="/works">View Projects</a>
                 </Button>
               </motion.div>
@@ -191,13 +192,13 @@ const Index = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
                 viewport={{ once: true }}
-                className="card-nebula p-8"
+                className="card-nebula p-6"
               >
-                <h3 className="text-2xl font-semibold mb-4 text-secondary">Research</h3>
-                <p className="text-muted-foreground mb-6">
+                <h3 className="text-xl font-semibold mb-3 text-secondary">Research</h3>
+                <p className="text-muted-foreground mb-4 text-sm">
                   Published papers and technical explorations
                 </p>
-                <Button asChild variant="outline">
+                <Button asChild variant="outline" size="sm" className="w-full">
                   <a href="/research">Read Papers</a>
                 </Button>
               </motion.div>
@@ -206,14 +207,44 @@ const Index = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
                 viewport={{ once: true }}
-                className="card-nebula p-8"
+                className="card-nebula p-6"
               >
-                <h3 className="text-2xl font-semibold mb-4 text-accent">Credentials</h3>
-                <p className="text-muted-foreground mb-6">
+                <h3 className="text-xl font-semibold mb-3 text-accent">Credentials</h3>
+                <p className="text-muted-foreground mb-4 text-sm">
                   Certifications and professional achievements
                 </p>
-                <Button asChild variant="outline">
+                <Button asChild variant="outline" size="sm" className="w-full">
                   <a href="/credentials">View Credentials</a>
+                </Button>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+                viewport={{ once: true }}
+                className="card-nebula p-6"
+              >
+                <h3 className="text-xl font-semibold mb-3 text-primary">Positions</h3>
+                <p className="text-muted-foreground mb-4 text-sm">
+                  Leadership roles and responsibilities
+                </p>
+                <Button asChild variant="outline" size="sm" className="w-full">
+                  <a href="/positions">View Positions</a>
+                </Button>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.5 }}
+                viewport={{ once: true }}
+                className="card-nebula p-6"
+              >
+                <h3 className="text-xl font-semibold mb-3 text-secondary">Contact</h3>
+                <p className="text-muted-foreground mb-4 text-sm">
+                  Get in touch for collaborations
+                </p>
+                <Button asChild variant="outline" size="sm" className="w-full">
+                  <a href="/contact">Contact Me</a>
                 </Button>
               </motion.div>
             </div>
