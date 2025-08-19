@@ -11,44 +11,54 @@ import SimpleStarField from "@/components/SimpleStarField";
 const Works = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      slug: "ecommerce-platform",
-      description: "A full-stack e-commerce solution with modern payment integration and inventory management.",
+      title: "PhishGuard - Phishing Detector",
+      slug: "phishguard-phishing-detector",
+      description: "Full-stack web application that detects potentially malicious or phishing URLs with confidence scoring and detailed analysis.",
       image: "/placeholder.svg",
-      technologies: ["React", "Node.js", "PostgreSQL", "Stripe"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/example",
-      category: "Full Stack"
+      technologies: ["React", "TypeScript", "Flask", "Python", "Scikit-learn", "SQLite"],
+      liveUrl: "#",
+      githubUrl: "https://github.com/Chitt-Bhavsar/PhishGard-Phishing-Detector",
+      category: "Security"
     },
     {
-      title: "AI Chat Application", 
-      slug: "ai-chat-app",
-      description: "Real-time chat application powered by AI with smart conversation features.",
+      title: "Threat Detection Through AI", 
+      slug: "threat-detection-ai",
+      description: "Cybersecurity threat detection system using machine learning algorithms on the CIC-IDS2017 dataset with feature selection and evaluation.",
       image: "/placeholder.svg",
-      technologies: ["Next.js", "OpenAI", "WebSocket", "Redis"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/example",
+      technologies: ["Python", "Machine Learning", "Jupyter", "CIC-IDS2017", "Feature Selection"],
+      liveUrl: "#",
+      githubUrl: "https://github.com/Chitt-Bhavsar/Threat-Detection-Through-Artificial-Intelligence",
       category: "AI/ML"
     },
     {
-      title: "Data Visualization Tool",
-      slug: "data-viz-tool", 
-      description: "Interactive dashboard for complex data analysis and visualization.",
+      title: "JobsSync Setup",
+      slug: "jobssync-setup", 
+      description: "Comprehensive CI/CD pipeline setup with Jenkins, Docker, Maven, and AWS CLI for automated deployment workflows.",
       image: "/placeholder.svg",
-      technologies: ["React", "D3.js", "Python", "FastAPI"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/example",
-      category: "Data Science"
+      technologies: ["Jenkins", "Docker", "Maven", "AWS CLI", "Java", "DevOps"],
+      liveUrl: "#",
+      githubUrl: "https://github.com/Chitt-Bhavsar/JobsSync-Setup",
+      category: "DevOps"
     },
     {
-      title: "Mobile Banking App",
-      slug: "mobile-banking",
-      description: "Secure mobile banking application with biometric authentication.",
+      title: "Live Sharing Clipboard",
+      slug: "live-sharing-clipboard",
+      description: "Real-time clipboard sharing application built with modern web technologies for seamless cross-device content sharing.",
       image: "/placeholder.svg", 
-      technologies: ["React Native", "Firebase", "Plaid API", "TypeScript"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/example",
-      category: "Mobile"
+      technologies: ["TypeScript", "React", "Real-time Sync", "Web Technologies"],
+      liveUrl: "#",
+      githubUrl: "https://github.com/Chitt-Bhavsar/Live-Sharing-Clipboard",
+      category: "Productivity"
+    },
+    {
+      title: "Centralized Health Monitoring + VA/PT",
+      slug: "health-monitoring-vapt",
+      description: "Self-hosted platform for comprehensive health monitoring, vulnerability assessment, and penetration testing with daily reporting and Grafana dashboards.",
+      image: "/placeholder.svg", 
+      technologies: ["Prometheus", "Grafana", "OpenVAS", "OWASP ZAP", "FastAPI", "PostgreSQL", "Docker"],
+      liveUrl: "#",
+      githubUrl: "#",
+      category: "Security"
     }
   ];
 
