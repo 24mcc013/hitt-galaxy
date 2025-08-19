@@ -47,15 +47,29 @@ function Stars(props: any) {
 
   return (
     <group rotation={[0, 0, Math.PI / 4]}>
-      <Points ref={ref} positions={positions} stride={3} frustumCulled={false} {...props}>
-        <PointMaterial
+      <points ref={ref} frustumCulled={false} {...props}>
+        <bufferGeometry>
+          <bufferAttribute
+            attach="attributes-position"
+            count={5000}
+            array={positions}
+            itemSize={3}
+          />
+          <bufferAttribute
+            attach="attributes-color"
+            count={5000}
+            array={colors}
+            itemSize={3}
+          />
+        </bufferGeometry>
+        <pointsMaterial
           transparent
           vertexColors
           size={0.01}
           sizeAttenuation={true}
           depthWrite={false}
         />
-      </Points>
+      </points>
     </group>
   );
 }
