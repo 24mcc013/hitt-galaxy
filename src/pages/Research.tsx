@@ -3,7 +3,8 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { FileText, Calendar, Users } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { FileText, Calendar, Users, ExternalLink } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import StarField from "@/components/StarField";
 
