@@ -26,11 +26,13 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					foreground: 'hsl(var(--primary-foreground))',
+					glow: 'hsl(var(--primary-glow))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
-					foreground: 'hsl(var(--secondary-foreground))'
+					foreground: 'hsl(var(--secondary-foreground))',
+					glow: 'hsl(var(--secondary-glow))'
 				},
 				destructive: {
 					DEFAULT: 'hsl(var(--destructive))',
@@ -51,17 +53,21 @@ export default {
 				card: {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
-				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
 				}
+			},
+			backgroundImage: {
+				'gradient-nebula': 'var(--gradient-nebula)',
+				'gradient-cosmic': 'var(--gradient-cosmic)',
+				'gradient-stellar': 'var(--gradient-stellar)'
+			},
+			boxShadow: {
+				'nebula': 'var(--shadow-nebula)',
+				'cosmic': 'var(--shadow-cosmic)',
+				'glow': 'var(--shadow-glow)'
+			},
+			transitionTimingFunction: {
+				'cosmic': 'cubic-bezier(0.4, 0, 0.2, 1)',
+				'stellar': 'cubic-bezier(0.25, 0.46, 0.45, 0.94)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +90,33 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'glow': {
+					'0%': { filter: 'brightness(1) drop-shadow(0 0 20px hsl(var(--primary) / 0.4))' },
+					'100%': { filter: 'brightness(1.2) drop-shadow(0 0 30px hsl(var(--primary) / 0.6))' }
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0px)' },
+					'50%': { transform: 'translateY(-10px)' }
+				},
+				'twinkle': {
+					'0%, 100%': { opacity: '0.3' },
+					'50%': { opacity: '1' }
+				},
+				'drift': {
+					'0%': { transform: 'translateX(0px) translateY(0px)' },
+					'33%': { transform: 'translateX(10px) translateY(-5px)' },
+					'66%': { transform: 'translateX(-5px) translateY(5px)' },
+					'100%': { transform: 'translateX(0px) translateY(0px)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'glow': 'glow 2s ease-in-out infinite alternate',
+				'float': 'float 3s ease-in-out infinite',
+				'twinkle': 'twinkle 2s ease-in-out infinite',
+				'drift': 'drift 8s ease-in-out infinite'
 			}
 		}
 	},
