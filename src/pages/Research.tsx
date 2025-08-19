@@ -11,34 +11,40 @@ import SimpleStarField from "@/components/SimpleStarField";
 const Research = () => {
   const papers = [
     {
-      title: "Machine Learning Applications in Modern Web Development",
-      slug: "ml-web-dev",
-      abstract: "Exploring the integration of machine learning algorithms in frontend and backend web development processes.",
-      publication: "Journal of Web Technologies",
+      title: "PUF and Edge-Assisted Secure V2V Communication Framework for ITS Underlying 6G Networks",
+      slug: "puf-edge-v2v-6g",
+      abstract: "Hardware-Assisted Lightweight Authentication for Embedded and IoT Systems. This paper proposes a low-cost authentication platform for embedded and IoT systems using SRAM PUFs to create unique device fingerprints for secure key generation or authentication without external storage or heavy computation.",
+      publication: "6G Networks and ITS Conference",
       year: 2024,
-      category: "Machine Learning",
-      pdfUrl: "https://example.com/paper1.pdf",
-      status: "Published"
+      category: "Security",
+      pdfUrl: "#",
+      status: "Published",
+      authors: 3,
+      keySkills: ["Secure Device Authentication", "Embedded Systems", "IoT Security", "Lightweight Cryptography", "Communication Protocols"]
     },
     {
-      title: "Blockchain Security Protocols for Distributed Applications", 
-      slug: "blockchain-security",
-      abstract: "A comprehensive analysis of security protocols in blockchain technology and their implementation in decentralized applications.",
-      publication: "International Conference on Blockchain",
-      year: 2023,
-      category: "Blockchain",
-      pdfUrl: "https://example.com/paper2.pdf",
-      status: "Published"
+      title: "Quantum Communication for Secure UAV Networks: A Solution for Latency, Energy, and Security", 
+      slug: "quantum-uav-networks",
+      abstract: "This research proposes a secure UAV communication framework using Quantum Key Distribution (QKD) with BB84 and E91 protocols to provide unbreakable encryption and real-time eavesdropping detection. A mathematical model optimizes latency, power usage, and security.",
+      publication: "Quantum Communication Journal",
+      year: 2024,
+      category: "Quantum Computing",
+      pdfUrl: "#",
+      status: "Published",
+      authors: 4,
+      keySkills: ["Quantum Communication", "Quantum Key Distribution", "UAV Security", "BB84 Protocol", "E91 Protocol", "Latency Optimization", "Energy Efficiency", "Cybersecurity", "Quantum Cryptography"]
     },
     {
-      title: "Cloud Computing Trends and Future Architectures",
-      slug: "cloud-trends",
-      abstract: "An in-depth study of emerging cloud computing patterns and their impact on scalable application architecture.",
-      publication: "Cloud Computing Quarterly",
-      year: 2023,
-      category: "Cloud Computing",
-      pdfUrl: "https://example.com/paper3.pdf",
-      status: "Under Review"
+      title: "Quantum Communication for Securing Military Networks",
+      slug: "quantum-military-networks",
+      abstract: "This research proposes a hybrid quantum-classical model to enhance military communication security by integrating Quantum Key Distribution (BB84) with classical encryption (AES-256). A prototype demonstrates secure key exchange, encrypted messaging, key logging, and real-time verification.",
+      publication: "Military Security Communications",
+      year: 2024,
+      category: "Quantum Computing",
+      pdfUrl: "#",
+      status: "Published",
+      authors: 1,
+      keySkills: ["Quantum Key Distribution (QKD)", "BB84 Protocol", "Military Network Security", "Hybrid Cryptography", "Post-Quantum Cryptography", "Secure Communication", "Quantum Cryptography", "System Architecture Design"]
     }
   ];
 
